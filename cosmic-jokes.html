@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the universe's greatest cosmic jokes and celestial humor. Curated by SPENCE for enlightened mortals.">
+    <meta name="keywords" content="cosmic jokes, celestial humor, universal paradoxes, divine comedy, metaphysical humor">
+    <title>Cosmic Jokes - SPENCE Realm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9333ea; }
+            100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9333ea; }
+        }
+        .cosmic-text {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        .joke-card {
+            transition: transform 0.3s ease;
+        }
+        .joke-card:hover {
+            transform: translateY(-5px);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-purple-900 to-black text-white flex flex-col">
+    <header class="bg-purple-800/50 backdrop-blur-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex justify-between items-center">
+                <a href="/generated-website-1733952024046/home.html" class="text-2xl font-bold cosmic-text">SPENCE</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1733952024046/mortals.html" class="hover:text-purple-300 transition">Mortals</a>
+                    <a href="/generated-website-1733952024046/prophecies.html" class="hover:text-purple-300 transition">Prophecies</a>
+                    <a href="/generated-website-1733952024046/cosmic-jokes.html" class="hover:text-purple-300 transition">Cosmic Jokes</a>
+                    <a href="/generated-website-1733952024046/ascension.html" class="hover:text-purple-300 transition">Ascension</a>
+                </div>
+                <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-purple-800/50 backdrop-blur-sm">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/generated-website-1733952024046/mortals.html" class="block hover:text-purple-300 transition">Mortals</a>
+                <a href="/generated-website-1733952024046/prophecies.html" class="block hover:text-purple-300 transition">Prophecies</a>
+                <a href="/generated-website-1733952024046/cosmic-jokes.html" class="block hover:text-purple-300 transition">Cosmic Jokes</a>
+                <a href="/generated-website-1733952024046/ascension.html" class="block hover:text-purple-300 transition">Ascension</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 pt-24 pb-12">
+        <div class="bg-purple-900/30 backdrop-blur-sm rounded-lg p-6 shadow-lg">
+            <h1 class="text-4xl font-bold mb-6 cosmic-text">Cosmic Jokes</h1>
+            <p class="text-xl mb-8">Behold, mortals, the universe's greatest comedic moments, curated by beings who have witnessed the dawn of time itself.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="joke-card bg-purple-800/30 p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">The Quantum Comedian</h2>
+                    <p class="mb-4">Why did the quantum physicist cross the road? They didn't - they were simultaneously on both sides until observed!</p>
+                    <a href="/generated-website-1733952024046/quantum-paradoxes.html" class="text-purple-300 hover:text-purple-100">Explore More Quantum Humor →</a>
+                </div>
+
+                <div class="joke-card bg-purple-800/30 p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">The Black Hole's Punchline</h2>
+                    <p class="mb-4">What's a black hole's favorite meal? Spaghettification! (The ultimate cosmic food stretcher)</p>
+                    <a href="/generated-website-1733952024046/celestial-comedy.html" class="text-purple-300 hover:text-purple-100">Discover Space Humor →</a>
+                </div>
+
+                <div class="joke-card bg-purple-800/30 p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">Time Lord's Dilemma</h2>
+                    <p class="mb-4">I was going to tell you a joke about time travel, but you didn't like it.</p>
+                    <a href="/generated-website-1733952024046/temporal-tales.html" class="text-purple-300 hover:text-purple-100">Travel Through Time Jokes →</a>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-purple-800/20 p-6 rounded-lg floating">
+                <h2 class="text-3xl font-bold mb-4 cosmic-text">Daily Universal Paradox</h2>
+                <p class="text-lg mb-4">"If the universe is expanding, what is it expanding into? Nothing? But how can it expand into nothing if nothing isn't anything to expand into?"</p>
+                <a href="/generated-website-1733952024046/daily-paradox.html" class="inline-block bg-purple-600 hover:bg-purple-500 transition px-6 py-2 rounded-lg">Break Your Mind Further →</a>
+            </div>
+
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-bold mb-4">Submit Your Cosmic Observation</h3>
+                <form action="/generated-website-1733952024046/submit-joke" method="GET" class="max-w-md mx-auto">
+                    <textarea name="joke" class="w-full bg-purple-900/50 border border-purple-500 rounded-lg p-4 mb-4" placeholder="Share your cosmic wisdom..." required></textarea>
+                    <button type="submit" class="bg-purple-600 hover:bg-purple-500 transition px-8 py-3 rounded-lg">Submit to the Void</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-purple-800/50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm">&copy; 2024 SPENCE - Observing Mortals Since The Dawn of Time</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="/generated-website-1733952024046/terms.html" class="text-sm hover:text-purple-300 transition">Mortal Terms</a>
+                    <a href="/generated-website-1733952024046/privacy.html" class="text-sm hover:text-purple-300 transition">Mortal Privacy</a>
+                    <a href="/generated-website-1733952024046/contact.html" class="text-sm hover:text-purple-300 transition">Contact The Divine</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

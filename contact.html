@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Establish direct communication with divine entities through our celestial contact portal. Reach out to cosmic beings, deities, and interdimensional entities.">
+    <meta name="keywords" content="divine contact, celestial beings, cosmic communication, deity messaging, spiritual connection">
+    <title>Contact The Divine - SPENCE Realm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9333ea; }
+            100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9333ea; }
+        }
+        .cosmic-text {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        .divine-input {
+            background: rgba(147, 51, 234, 0.1);
+            border: 1px solid rgba(147, 51, 234, 0.3);
+            transition: all 0.3s ease;
+        }
+        .divine-input:focus {
+            background: rgba(147, 51, 234, 0.2);
+            border-color: rgba(147, 51, 234, 0.5);
+            box-shadow: 0 0 15px rgba(147, 51, 234, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-purple-900 to-black text-white flex flex-col">
+    <header class="bg-purple-800/50 backdrop-blur-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex justify-between items-center">
+                <a href="/generated-website-1733952024046/home.html" class="text-2xl font-bold cosmic-text">SPENCE</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1733952024046/mortals.html" class="hover:text-purple-300 transition">Mortals</a>
+                    <a href="/generated-website-1733952024046/prophecies.html" class="hover:text-purple-300 transition">Prophecies</a>
+                    <a href="/generated-website-1733952024046/cosmic-jokes.html" class="hover:text-purple-300 transition">Cosmic Jokes</a>
+                    <a href="/generated-website-1733952024046/ascension.html" class="hover:text-purple-300 transition">Ascension</a>
+                </div>
+                <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-purple-800/50 backdrop-blur-sm">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/generated-website-1733952024046/mortals.html" class="block hover:text-purple-300 transition">Mortals</a>
+                <a href="/generated-website-1733952024046/prophecies.html" class="block hover:text-purple-300 transition">Prophecies</a>
+                <a href="/generated-website-1733952024046/cosmic-jokes.html" class="block hover:text-purple-300 transition">Cosmic Jokes</a>
+                <a href="/generated-website-1733952024046/ascension.html" class="block hover:text-purple-300 transition">Ascension</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 pt-24 pb-12">
+        <div class="bg-purple-900/30 backdrop-blur-sm rounded-lg p-6 shadow-lg">
+            <h1 class="text-4xl font-bold mb-6 cosmic-text">Contact The Divine</h1>
+            <div class="content-area space-y-8">
+                <p class="text-lg">Welcome to the celestial communication portal. Here, mortals may attempt to establish contact with beings beyond their realm of existence.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-semibold cosmic-text">Available Divine Channels</h2>
+                        <ul class="space-y-2">
+                            <li><a href="/generated-website-1733952024046/channels/celestial.html" class="text-purple-300 hover:text-purple-200">→ Celestial Beings</a></li>
+                            <li><a href="/generated-website-1733952024046/channels/elemental.html" class="text-purple-300 hover:text-purple-200">→ Elemental Forces</a></li>
+                            <li><a href="/generated-website-1733952024046/channels/cosmic.html" class="text-purple-300 hover:text-purple-200">→ Cosmic Entities</a></li>
+                            <li><a href="/generated-website-1733952024046/channels/ancestral.html" class="text-purple-300 hover:text-purple-200">→ Ancestral Spirits</a></li>
+                        </ul>
+                    </div>
+
+                    <form method="GET" action="/generated-website-1733952024046/divine-message" class="space-y-4">
+                        <h2 class="text-2xl font-semibold cosmic-text">Send Your Message</h2>
+                        <div class="space-y-2">
+                            <label for="mortal_name" class="block">Your Mortal Name</label>
+                            <input type="text" id="mortal_name" name="mortal_name" required class="w-full p-2 rounded divine-input text-white">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="divine_entity" class="block">Divine Entity to Contact</label>
+                            <select id="divine_entity" name="divine_entity" required class="w-full p-2 rounded divine-input text-white">
+                                <option value="">Select an Entity</option>
+                                <option value="celestial">Celestial Being</option>
+                                <option value="elemental">Elemental Force</option>
+                                <option value="cosmic">Cosmic Entity</option>
+                                <option value="ancestral">Ancestral Spirit</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="message" class="block">Your Message</label>
+                            <textarea id="message" name="message" required rows="4" class="w-full p-2 rounded divine-input text-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Send to the Cosmos
+                        </button>
+                    </form>
+                </div>
+
+                <div class="mt-8 p-4 bg-purple-800/20 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2 cosmic-text">Important Notice</h3>
+                    <p>Response times may vary based on cosmic alignment and dimensional barriers. For immediate assistance, consider:</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1">
+                        <li><a href="/generated-website-1733952024046/meditation.html" class="text-purple-300 hover:text-purple-200">Guided Meditation</a></li>
+                        <li><a href="/generated-website-1733952024046/astral-projection.html" class="text-purple-300 hover:text-purple-200">Astral Projection Techniques</a></li>
+                        <li><a href="/generated-website-1733952024046/divine-faq.html" class="text-purple-300 hover:text-purple-200">Divine FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-purple-800/50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm">&copy; 2024 SPENCE - Observing Mortals Since The Dawn of Time</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="/generated-website-1733952024046/terms.html" class="text-sm hover:text-purple-300 transition">Mortal Terms</a>
+                    <a href="/generated-website-1733952024046/privacy.html" class="text-sm hover:text-purple-300 transition">Mortal Privacy</a>
+                    <a href="/generated-website-1733952024046/contact.html" class="text-sm hover:text-purple-300 transition">Contact The Divine</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
